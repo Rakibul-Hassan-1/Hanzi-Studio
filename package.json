@@ -1,0 +1,27 @@
+{
+  "name": "hanzi-video-docs",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "postinstall": "node scripts/prepare-assets.mjs",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "node scripts/serve-preview.mjs --production",
+    "prepare:assets": "node scripts/prepare-assets.mjs",
+    "models:download": "node scripts/download-models.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "check": "node scripts/check.mjs",
+    "preview:standalone": "node scripts/serve-preview.mjs"
+  },
+  "devDependencies": { "jszip": "3.10.1" },
+  "dependencies": {
+    "next": "^16.0.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "tesseract.js": "7.0.0",
+    "tesseract.js-core": "7.0.0",
+    "docx": "9.6.1"
+  }
+}

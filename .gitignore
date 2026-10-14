@@ -1,0 +1,8 @@
+node_modules/
+.next/
+out/
+public/vendor/
+public/models/*.traineddata*
+test-output/
+.DS_Store
+*.log
